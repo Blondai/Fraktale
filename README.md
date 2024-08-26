@@ -25,7 +25,15 @@ This resulted in 'GenerateGrid.py', 'Iterate.py', 'Visualize.py' and 'main.py'.
 I think with NumPy and Python you can't get any faster.
 
 ## How it's going
-To get an even faster implementation of this Julia set stuff I tried using Rust, but sadly I can't find those files.
+To get an even faster implementation of this Julia set stuff I also made a Rust implementation which is indeed blazingly fast.
+The following 10000 x 10000 picture was generated with the Rust Code.
+
+<p align="center">
+  <img src="./Pictures/Rust.png" width="600px">
+</p>
+
+If you want to use the Rust version you should consider using `cargo build --release`.
+The faster calculation easily overtakes the longer compile time.
 
 ## Goal
 The dream goal of this project would be an implementation where you can also zoom into the picture to get a clearer view of different parts of the fractal.
